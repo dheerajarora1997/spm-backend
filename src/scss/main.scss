@@ -1,3 +1,14 @@
+@import "./vendor/bootstrap-scss/functions";
+// 2. Include any default variable overrides here
+@import "./abstracts/variable-overwrite";
+// 3. Include remainder of required Bootstrap stylesheets
+@import "./vendor/bootstrap-scss/variables";
+@import "./vendor/bootstrap-scss/mixins";
+hr{border: 1px solid red;}
+// 4. Include any optional Bootstrap components as you like
+@import "./vendor/bootstrap-scss/bootstrap.scss";
+
+
 h1 {
     border: 1px solid red;
 
@@ -45,5 +56,3 @@ h6 {
         border-color: green;
     }
 }
-
-

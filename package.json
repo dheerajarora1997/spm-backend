@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/dheerajarora1997/spm-backend#readme",
   "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-scss": "^4.6.1",
     "node-sass": "^6.0.1"
   }
 }
