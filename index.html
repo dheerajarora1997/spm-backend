@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/style/css/main.css">
 </head>
+
 <body>
     <div class="container">
+        <button class="btn btn-orange" type="button" data-toggle="popover" title="hello world" data-trigger="hover" data-placement="top">cancel</button>
         <h1>Heading 1</h1>
-        <button class="btn btn-orange" type="button">cancel</button>
         <div class="p-5 bg-orange border border-success">asd</div>
     </div>
+    <script src="./src/js/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="./src/js/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+        })
+    </script>
 </body>
+
 </html>
