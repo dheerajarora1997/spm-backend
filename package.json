@@ -1,0 +1,23 @@
+{
+  "name": "spm-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass -w src/scss/ -o src/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dheerajarora1997/spm-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dheerajarora1997/spm-backend/issues"
+  },
+  "homepage": "https://github.com/dheerajarora1997/spm-backend#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
