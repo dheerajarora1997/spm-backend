@@ -4,7 +4,6 @@
 // 3. Include remainder of required Bootstrap stylesheets
 @import "./vendor/bootstrap-scss/variables";
 @import "./vendor/bootstrap-scss/mixins";
-hr{border: 1px solid red;}
 // 4. Include any optional Bootstrap components as you like
 @import "./vendor/bootstrap-scss/bootstrap.scss";
 
@@ -55,4 +54,7 @@ h6 {
     &:hover {
         border-color: green;
     }
+}
+body{
+    background: purple;
 }

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "node-sass -w src/style/scss/ -o src/style/css/"
+    "compile:sass": "node-sass -w src/style/scss/ -o src/style/css/ --style compressed",
+    "build:css": "css-minify -d src/style/css/ -o src/style/css/",
+    "bundle": "node-sass src/style/scss/ -o src/style/css/ --style compressed; css-minify -d src/style/css/ -o src/style/css/"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,9 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "bootstrap-scss": "^4.6.1",
+    "css-minify": "^2.0.0",
     "jquery": "^3.6.0",
-    "node-sass": "^6.0.1"
+    "node-sass": "^6.0.1",
+    "select-picker": "^0.3.2"
   }
 }
