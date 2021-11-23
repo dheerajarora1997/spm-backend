@@ -6,55 +6,5 @@
 @import "./vendor/bootstrap-scss/mixins";
 // 4. Include any optional Bootstrap components as you like
 @import "./vendor/bootstrap-scss/bootstrap.scss";
-
-
-h1 {
-    border: 1px solid red;
-
-    &:hover {
-        border-color: green;
-    }
-}
-
-h2 {
-    border: 1px solid red;
-
-    &:hover {
-        border-color: green;
-    }
-}
-
-h3 {
-    border: 1px solid red;
-
-    &:hover {
-        border-color: green;
-    }
-}
-
-h4 {
-    border: 1px solid red;
-
-    &:hover {
-        border-color: green;
-    }
-}
-
-h5 {
-    border: 1px solid red;
-
-    &:hover {
-        border-color: green;
-    }
-}
-
-h6 {
-    border: 1px solid red;
-
-    &:hover {
-        border-color: green;
-    }
-}
-body{
-    background: purple;
-}
+@import "./abstracts/mixin", "./abstracts/helper";
+@import "./components/scroll-bar", "./components/cta", "./base/normalize", "./base/typography", "./layouts/footer", "./layouts/forms", "./layouts/layout", "./layouts/navigation", "./layouts/sidebar";
