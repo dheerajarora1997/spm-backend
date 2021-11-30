@@ -10952,3 +10952,26 @@ nav.navbar .navbar-nav .dropdown .nav-link.dropdown-toggle {
     border-style: solid;
     border-color: #E26A2C #E26A2C #E26A2C transparent;
     left: -10px; }
+
+.source {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3px 3px;
+  background: #E26A2C;
+  border-radius: 0 0 40px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px; }
+  .source.facebook {
+    background: #3b5998;
+    color: #fff; }
+  .source.g-ads {
+    background: #34A853;
+    color: #fff; }
+  .source.twitter {
+    background: #00acee;
+    color: #fff; }
