@@ -176,7 +176,7 @@ label {
         right: 16px;
         top: 19px;
         z-index: -1;
-        color: $brand-primary;
+        color: $brand;
       }
 
       ul {
@@ -184,11 +184,11 @@ label {
         overflow-y: scroll;
 
         li a {
-          color: $brand-primary;
+          color: $brand;
 
           &:hover {
             // background-color: $brand-lightest;
-            color: $brand-primary;
+            color: $brand;
           }
         }
       }
@@ -250,7 +250,7 @@ label {
         right: 15px;
         top: 10px;
         z-index: -1;
-        color: $brand-primary;
+        color: $brand;
       }
     }
 
@@ -261,7 +261,7 @@ label {
 
       a {
         padding: .25rem;
-        color: $brand-primary;
+        color: $brand;
 
         &:hover,
         &:focus,
@@ -269,7 +269,7 @@ label {
         &.active,
         &.selected {
           // background-color: $brand-lightest;
-          color: $brand-primary;
+          color: $brand;
         }
       }
     }

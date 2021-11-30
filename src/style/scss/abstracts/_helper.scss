@@ -14,7 +14,7 @@
 
 
   .text-brand {
-    color: $anchor-color;
+    color: $brand;
   }
 
   .font-medium {
@@ -81,7 +81,7 @@
     @extend %flex-center;
 
     &:hover {
-      color: $brand-primary;
+      color: $brand;
     }
   }
 

@@ -2,13 +2,13 @@
     width: 5px;
     &-track{
         background: #f2f2f2;
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, .2);
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .2);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, .45);
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .45);
     }
     &-thumb{
-        background: $brand-primary;
+        background: $brand;
         &:hover{
-            background: $brand-primary;
+            background: $brand;
         }
     }
 }

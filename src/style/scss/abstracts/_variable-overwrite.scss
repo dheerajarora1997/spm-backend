@@ -1,7 +1,8 @@
 @import './variable';
 $font-size-base: .95rem !default;
 
-$theme-colors: ("orange":orange,
+$theme-colors: ("primary": #E26A2C,
+  "orange":orange,
   "light-info": #b4d3ff,
   "light-warning": #fbe6b7,
   "light-success": #c7f2df,

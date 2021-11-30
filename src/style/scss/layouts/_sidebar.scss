@@ -1,9 +1,7 @@
 .sidebar {
-    // @extend .primary-bg;
     @extend .position-fixed;
     @extend .d-flex;
     @extend .shadow-lg;
-    color: $black;
     min-width: $sidebar-width;
     max-width: $sidebar-width;
     transition: all .3s;
@@ -25,7 +23,7 @@
     }
 
     a {
-        color: $black;
+        color: $white;
 
         i {
             @extend %flex-center;
