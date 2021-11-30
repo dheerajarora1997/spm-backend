@@ -1,0 +1,18 @@
+.ribbon {
+    position: absolute;
+    padding: 0 10px;
+    color: #fff;
+    right: 0;
+    background: $brand;
+    min-height: 22px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        border-width: 11px 0 11px 10px;
+        border-style: solid;
+        border-color: $brand $brand $brand transparent;
+        left: -10px;
+    }
+}

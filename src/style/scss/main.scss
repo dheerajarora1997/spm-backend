@@ -7,4 +7,6 @@
 // 4. Include any optional Bootstrap components as you like
 @import "./vendor/bootstrap-scss/bootstrap.scss";
 @import "./abstracts/mixin", "./abstracts/helper";
-@import "./components/scroll-bar", "./components/cta", "./base/normalize", "./base/typography", "./layouts/footer", "./layouts/forms", "./layouts/layout", "./layouts/navigation", "./layouts/sidebar";
+@import  "./base/normalize", "./base/typography", "./layouts/footer", "./layouts/forms", "./layouts/layout", "./layouts/navigation", "./layouts/sidebar";
+
+ @import "./components/scroll-bar", "./components/cta", "./components/ribbon";
