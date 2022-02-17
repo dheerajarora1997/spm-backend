@@ -1,11 +1,14 @@
 @import './variable';
 $font-size-base: .95rem !default;
 
-$theme-colors: ("primary": #E26A2C,
-"secondary": #333,
-  "orange":orange,
-  "light-info": #b4d3ff,
-  "light-warning": #fbe6b7,
-  "light-success": #c7f2df,
-  "light-danger": #faccd9,
+$theme-colors: (
+  "tertiary": #1f7a8c,
+  "quaternary": #1d1e2c,
+  "quinary": #ef5b5b,
+  "senary": #eadeda,
+  "septenary": #79c99e,
+  "octonary": #f4fff8,
+  "nonary": #ffe156,
+  "denary": #82d173,
+  "eleventh": #80ffe8,
 );
