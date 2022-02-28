@@ -1,0 +1,24 @@
+@import './variable';
+@import '../vendor/bootstrap-scss/variables';
+$font-size-base: .95rem !default;
+
+$theme-colors: ("primary": #418ba9,
+  "secondary": #57B1CB,
+  "warning": #FEDC97,
+  "success":#137547,
+  "danger":#E76C69,
+  "info": #6FCACB,
+  "tertiary": #F0CFB8,
+  "light": #F5EFFF,
+  "dark": #272838,
+  "black": #272727,
+  "white": #ffffff,
+  // "quaternary": #1d1e2c,
+  // "quinary": #ef5b5b,
+  // "senary": #eadeda,
+  // "septenary": #79c99e,
+  // "octonary": #f4fff8,
+  // "nonary": #ffe156,
+  // "denary": #82d173,
+  // "eleventh": #80ffe8,
+);

@@ -46,7 +46,6 @@
 .icon-long-arrow-left {
   &:before {
     content: "\e901";
-    @extend .d-inline-block;
     @include rotate(180deg);
   }
 }

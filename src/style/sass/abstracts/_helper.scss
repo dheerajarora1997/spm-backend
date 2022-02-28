@@ -1,3 +1,5 @@
+@import '../_getBootstrap.scss';
+
 .text-black {
     color: $black;
   }
@@ -30,7 +32,6 @@
   }
 
   .badge-notify {
-    @extend .position-absolute;
     top: 4px;
     right: -2px;
     border-radius: 50%;
@@ -134,9 +135,6 @@
   }
 
   .popover {
-    .popover-title {
-      // @extend .primary-text-color;
-    }
 
     .popover-navigation {
       .btn:hover {

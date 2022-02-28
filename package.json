@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w src/style/sass/ -o src/style/css/",
     "compile:sass": "node-sass -w src/style/scss/ -o src/style/css/ --style compressed",
     "build:css": "css-minify -d src/style/css/ -o src/style/css/",
     "bundle": "node-sass src/style/scss/ -o src/style/css/ --style compressed; css-minify -d src/style/css/ -o src/style/css/"
@@ -20,11 +21,10 @@
   },
   "homepage": "https://github.com/dheerajarora1997/spm-backend#readme",
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "bootstrap-scss": "^4.6.1",
-    "css-minify": "^2.0.0",
-    "jquery": "^3.6.0",
-    "node-sass": "^6.0.1",
     "select-picker": "^0.3.2"
+  },
+  "devDependencies": {
+    "node-scss": "^7.0.3",
+    "sass": "^1.49.9"
   }
 }

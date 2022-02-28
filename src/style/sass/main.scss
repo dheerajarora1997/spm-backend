@@ -1,11 +1,6 @@
-@import "./vendor/bootstrap-scss/functions";
-// 2. Include any default variable overrides here
-@import "./abstracts/variable-overwrite";
-// 3. Include remainder of required Bootstrap stylesheets
-@import "./vendor/bootstrap-scss/variables";
-@import "./vendor/bootstrap-scss/mixins";
+@import url('./_getBootstrap.scss');
 // 4. Include any optional Bootstrap components as you like
-@import "./vendor/bootstrap-scss/bootstrap.scss";
+// @import "./vendor/bootstrap-scss/bootstrap.scss";
 @import "./abstracts/mixin", "./abstracts/helper";
 @import  "./base/normalize", "./base/typography", "./layouts/footer", "./layouts/forms", "./layouts/layout", "./layouts/navigation", "./layouts/sidebar";
 

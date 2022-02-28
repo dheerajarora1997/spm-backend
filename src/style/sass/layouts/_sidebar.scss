@@ -1,7 +1,6 @@
 .sidebar {
-    @extend .position-fixed;
-    @extend .d-flex;
-    @extend .shadow-lg;
+    position: fixed;
+    display: flex;
     min-width: $sidebar-width;
     max-width: $sidebar-width;
     transition: all .3s;
@@ -40,7 +39,6 @@
 
         &.active i,
         &:hover i {
-            @extend .rounded-circle;
             background: rgba(255, 255, 255, .28);
         }
 
@@ -84,10 +82,6 @@
             font-size: $font-size-base - .125rem;
 
             a {
-                @extend .d-inline-block;
-                @extend .p-2;
-                @extend .d-flex;
-                @extend .align-items-center;
                 color: $black;
 
                 span {

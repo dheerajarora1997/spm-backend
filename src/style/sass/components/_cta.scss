@@ -6,8 +6,6 @@
 
     .cont-btn {
         @include rotate(-90deg);
-        @extend .position-fixed;
-        @extend .font-weight-normal;
         border-radius: 10px 10px 0 0;
         background: $brand-secondary;
         color: $base-color;
@@ -43,9 +41,6 @@
         z-index: 1111;
 
         .panel {
-            @extend .bg-white;
-            @extend .p-2;
-            @extend .rounded;
             box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 
             .panel-body {
@@ -54,13 +49,10 @@
             }
 
             .query-btn {
-                @extend .text-decoration-underline;
-                @extend .p-2;
-                @extend .font-weight-normal;
                 color: $brand-secondary;
 
                 &:hover {
-                    @extend .text-decoration-none;
+                    text-decoration: none;
                 }
             }
         }
