@@ -1,6 +1,7 @@
-@import url('./_getBootstrap.scss');
-// 4. Include any optional Bootstrap components as you like
-// @import "./vendor/bootstrap-scss/bootstrap.scss";
+@import "./_getBootstrap.scss";
+
+// 4. Include any optional components as you like
+
 @import "./abstracts/mixin", "./abstracts/helper";
 @import  "./base/normalize", "./base/typography", "./layouts/footer", "./layouts/forms", "./layouts/layout", "./layouts/navigation", "./layouts/sidebar";
 
