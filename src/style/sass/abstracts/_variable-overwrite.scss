@@ -1,6 +1,8 @@
+@import '../../vendor/bootstrap-scss/variables';
 @import './variable';
-@import '../vendor/bootstrap-scss/variables';
+
 $font-size-base: .95rem !default;
+$primary : #418ba9;
 
 $theme-colors: ("primary": #418ba9,
   "secondary": #57B1CB,

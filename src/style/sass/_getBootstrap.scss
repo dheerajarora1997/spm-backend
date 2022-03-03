@@ -4,5 +4,3 @@
 @import "./abstracts/variable-overwrite";
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../vendor/bootstrap-scss/mixins";
-
-@import "../vendor/bootstrap-scss/grid", "../vendor/bootstrap-scss/root", "../vendor/bootstrap-scss/reboot", "../vendor/bootstrap-scss/utilities", "../vendor/bootstrap-scss/alert", "../vendor/bootstrap-scss/buttons", "../vendor/bootstrap-scss/button-group";
