@@ -1,1 +1,79 @@
-@import '../../vendor/datatables/scss/dataTables'
+@import '../../vendor/datatables/scss/dataTables';
+
+table.table {
+
+  @media only screen and (max-width: 768px) {
+    * {
+      position: relative;
+    }
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      tr {
+        margin-bottom: 10px;
+
+        td {
+          width: 100%;
+          display: block;
+          padding-left: 40% !important;
+          padding-top: 10px;
+          padding-bottom: 5px;
+          border-top: none;
+          padding-left: 35% !important;
+
+          &:last-child {
+            padding-bottom: 10px;
+          }
+
+          &:before {
+            content: attr(data-title);
+            font-size: 14px;
+            color: #999;
+            line-height: 1.2;
+            font-weight: unset;
+            position: absolute;
+            width: 40%;
+            top: 14px;
+            left: 20px;
+
+            @media only screen and (max-width: 767px) {
+              font-size: 11px;
+            }
+          }
+
+          &.has-checkbox {
+            min-height: 25px;
+            padding-top: 10px !important;
+            padding-left: 20px !important;
+
+            input[type="radio"],
+            input[type="checkbox"] {
+              position: absolute;
+              left: 5px;
+              top: 2px;
+            }
+          }
+
+          &:empty {
+            padding: 0;
+          }
+        }
+
+        &.collapse td {
+          padding-left: 20px !important;
+
+          &:before {
+            width: 0;
+          }
+
+          &.has-checkbox {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
