@@ -15,8 +15,17 @@
     <main class="position-relative bg-light">
         <div class="carousel-wrap top-gradient-section">
             <div class="container">
-                <h2 class="text-white">Hello {UserName}</h2>
-                <p class="text-white mb-3">Here are your recent active Leads</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h2 class="text-white">Hello {UserName}</h2>
+                        <p class="text-white mb-3">Here are your recent active Leads</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-right d-none d-md-block">
+                        <button class="w-10 h-10 btn btn-white btn-sm rounded-circle border-0 p-0">
+                            <img src="./src/img/menu.png" alt="menu" class="w-9">
+                        </button>
+                    </div>
+                </div>
                 <div class="block-item-group owl-carousel" id="owlCarousel">
 
                 </div>
