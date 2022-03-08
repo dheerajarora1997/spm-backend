@@ -2,7 +2,7 @@
 
 @import '../vendor/bootstrap-scss/list-group', '../vendor/owl.carousel/src/scss/owl.carousel.scss';
 
-@import '../sass/components/owl-carousal';
+@import './layouts/forms', './components/owl-carousal', './components/dataTables', './components/table';
 
 .bottom-menu {
   margin: 0 auto;
@@ -12,6 +12,7 @@
   max-width: 1300px;
   border-radius: 20px;
   left: 4vw;
+  z-index: 99;
   width: calc(100% - 100px);
   background: rgba(255, 255, 255, .7);
   box-shadow: 0 0 10px rgba(0, 0, 0, .05);
@@ -30,15 +31,16 @@
 .top-gradient-section {
   padding: 40px 0 0;
   position: relative;
-  // background: $secondary;
+  z-index: 1;
   // background: linear-gradient(180deg, $secondary 0%, $white 25%, $white 100%);
   &:before{
     content: '';
-    position: absolute;
     top: 0;
     height: 50%;
     width: 100%;
-    background: $primary;
+    z-index: -1;
+    position: absolute;
+    background: $secondary;
     box-shadow: 0 0 100px rgba(0, 0, 0, .2);
   }
 }

@@ -1,8 +1,19 @@
 @import '../../vendor/bootstrap-scss/variables';
-@import './variable';
+// @import './variable';
 
 $font-size-base: .95rem !default;
+
 $primary : #418ba9;
+$secondary: #57B1CB;
+$warning: #FEDC97;
+$success:#137547;
+$danger:#E76C69;
+$info: #6FCACB;
+$tertiary: #F0CFB8;
+$light: #F5EFFF;
+$dark: #272838;
+$black: #272727;
+$white: #ffffff;
 
 $theme-colors: ("primary": #418ba9,
   "secondary": #57B1CB,

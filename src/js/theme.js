@@ -1,44 +1,73 @@
-if (jQuery('[data-toggle="tooltip"]').length) {
-    jQuery('[data-toggle="tooltip"]').tooltip();
+intiToolTip = () => {
+    if (jQuery('[data-toggle="tooltip"]').length) {
+        jQuery('[data-toggle="tooltip"]').tooltip();
+    }
+    jQuery('[data-toggle="tooltip"][data-trigger="hover"]').on('click', function () {
+        jQuery('.tooltip').remove();
+    })
 }
 
-if (jQuery('.selectpicker').length) {
-    jQuery('.selectpicker').selectpicker();
+intiPopOver = () => {
+    if (jQuery('[data-toggle="popover"]').length) {
+        jQuery('[data-toggle="popover"]').popover();
+    }
+    jQuery('[data-toggle="popover"][data-trigger="hover"]').on('click', function () {
+        jQuery('.popover').remove();
+    })
 }
 
-jQuery('[data-toggle="tooltip"][data-trigger="hover"]').on('click', function () {
-    jQuery('.tooltip').remove();
-})
+intiSelectPicker = () => {
+    if (jQuery('.selectPicker').length) {
+        jQuery('.selectPicker').selectpicker();
+    }
+}
 
-if (jQuery('.owl-carousel').length) {
-    jQuery('.owl-carousel').owlCarousel({
-        nav: true,
-        navigation: true,
-        autoWidth: false,
-        navText: [
-            "<i class='fa fa-angle-left'></i>",
-            "<i class='fa fa-angle-right'></i>"
-        ],
-        autoplay: false,
-        responsiveClass: true,
-        autoplayHoverPause: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
+initOwlCarousel = () => {
+    if (jQuery('.owl-carousel').length) {
+        jQuery('.owl-carousel').owlCarousel({
+            nav: true,
+            navigation: true,
+            autoWidth: false,
+            navText: [
+                "<i class='fa fa-angle-left'></i>",
+                "<i class='fa fa-angle-right'></i>"
+            ],
+            autoplay: false,
+            responsiveClass: true,
+            autoplayHoverPause: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                },
+                1300: {
+                    items: 4
+                }
             },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            },
-            1300: {
-                items: 4
-            }
-        },
+        });
+    }
+}
+
+initDataTable = () => {
+    $('.data-table').dataTable({
+        rowReorder: true,
+        columnDefs: [
+            { orderable: true, className: 'reorder', targets: 0 },
+            // { orderable: false, targets: '_all' }
+        ]
     });
 }
+
+
+
+
+
 
 
 

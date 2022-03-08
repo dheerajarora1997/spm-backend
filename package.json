@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/dheerajarora1997/spm-backend#readme",
   "dependencies": {
+    "datatables.net-bs4": "^1.11.5",
     "select-picker": "^0.3.2"
   },
   "devDependencies": {

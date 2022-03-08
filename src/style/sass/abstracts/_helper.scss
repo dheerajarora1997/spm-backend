@@ -4,20 +4,7 @@
     color: $black;
   }
 
-  .text-base {
-    color: $base-color;
 
-    &:hover,
-    &:focus,
-    &:active {
-      color: $base-color;
-    }
-  }
-
-
-  .text-brand {
-    color: $brand;
-  }
 
   .font-medium {
     font-weight: 600;
@@ -80,10 +67,6 @@
     border-radius: 100%;
     background: #f1f1f1;
     @extend %flex-center;
-
-    &:hover {
-      color: $brand;
-    }
   }
 
   .bg-light-info {

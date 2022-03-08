@@ -8,6 +8,7 @@
 //  @import "./components/scroll-bar", "./components/cta", "./components/ribbon";
 
  main{
-   height: 100vh;
+   min-height: 100%;
    width: 100%;
+   padding-bottom: 150px;
  }
