@@ -1,14 +1,20 @@
-@import "./_getBootstrap.scss","./getBootstrapComponents" ;
+@import "./_getBootstrap.scss", "./getBootstrapComponents";
 
 // 4. Include any optional components as you like
 
 @import "./abstracts/mixin", "./abstracts/helper";
-@import  "./base/normalize", "./base/typography";
+@import "./base/normalize", "./base/typography";
+
+ @import "./components/width", "./components/height","./components/z-index";
 
 //  @import "./components/scroll-bar", "./components/cta", "./components/ribbon";
 
- main{
-   min-height: 100%;
-   width: 100%;
-   padding-bottom: 150px;
- }
+main {
+  min-height: 100%;
+  width: 100%;
+  padding-bottom: 150px;
+
+  @media only screen and (max-width: 767px) {
+    padding-bottom: 80px;
+  }
+}
