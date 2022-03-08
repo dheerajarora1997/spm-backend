@@ -44,11 +44,12 @@
   &:before{
     content: '';
     top: 0;
-    height: 50%;
+    height: 53%;
     width: 100%;
     z-index: -1;
     position: absolute;
     background: $secondary;
+    border-radius: 0 0 100px 100px;
     box-shadow: 0 0 100px rgba(0, 0, 0, .2);
   }
 }
