@@ -1,0 +1,26 @@
+.top-gradient-section {
+  padding: 35px 0 0;
+  position: relative;
+  z-index: 1;
+
+  // background: linear-gradient(180deg, $secondary 0%, $white 25%, $white 100%);
+  &:before {
+    content: '';
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 53%;
+    min-height: 125px;
+    position: absolute;
+    background: $primary;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .3);
+
+    @media only screen and (min-width: 768px) {
+      border-radius: 0 0 100px 100px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      border-radius: 0 0 30px 30px;
+    }
+  }
+}

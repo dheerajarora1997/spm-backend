@@ -5,13 +5,13 @@
 @import "./abstracts/mixin", "./abstracts/helper";
 @import "./base/normalize", "./base/typography";
 
-@import "./components/width", "./components/height", "./components/z-index", "./components/font-size";
+@import "./components/width", "./components/height", "./components/z-index", "./components/font-size", "./components/scroll-bar", "./components/top-gradient", "./components/bottom-bar";
 
-//  @import "./components/scroll-bar", "./components/cta", "./components/ribbon";
+//  @import "./components/cta", "./components/ribbon";
 
 main {
-  min-height: 100%;
   width: 100%;
+  min-height: 100vh;
 
   @media only screen and (min-width: 768px) {
     padding-bottom: 150px;

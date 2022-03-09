@@ -1,0 +1,30 @@
+@import '../vendor/bootstrap-scss/list-group';
+
+.bottom-menu {
+  margin: 0 auto;
+  position: fixed;
+  min-height: 70px;
+  max-width: 1300px;
+  z-index: 99;
+  background: rgba(255, 255, 255, .7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+  backdrop-filter: saturate(250%) blur(5px);
+
+  @media only screen and (min-width: 768px) {
+    left: 4vw;
+    bottom: 40px;
+    width: calc(100% - 100px);
+    border-radius: 20px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+  }
+
+  a {
+    position: relative;
+  }
+}
