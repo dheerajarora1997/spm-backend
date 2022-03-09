@@ -29,10 +29,6 @@
 
   a {
     position: relative;
-    // transition: all 2s;
-    &:hover {
-      // top: -20px;
-    }
   }
 }
 
@@ -40,6 +36,7 @@
   padding: 40px 0 0;
   position: relative;
   z-index: 1;
+  min-height: 200px;
   // background: linear-gradient(180deg, $secondary 0%, $white 25%, $white 100%);
   &:before{
     content: '';
