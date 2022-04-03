@@ -1,0 +1,43 @@
+.floating-input {
+  position: relative;
+  padding-top: 20px;
+
+  label {
+    position: absolute;
+    background: white;
+    opacity: 0;
+    top: 9px;
+    left: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+
+  .form-control{
+    border: none;
+    background: rgba(0,0,0,.01);
+    &:focus{
+      box-shadow: none;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    position: relative;
+    border-color: #ced4da;
+
+    &:not(:placeholder-shown)+label {
+      top: 0;
+      font-size: 90%;
+      opacity: 1;
+    }
+
+    &:disabled+label {
+      opacity: 0.5;
+    }
+  }
+}

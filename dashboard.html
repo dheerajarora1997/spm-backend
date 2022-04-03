@@ -8,7 +8,6 @@
     <title>Dashboard - Super Packers & Movers</title>
     <link rel="stylesheet" href="./src/style/css/main.css">
     <link rel="stylesheet" href="./src/style/css/dashboard.css">
-    <!-- <link rel="shortcut icon" type="image/jpg" href="./img/fav-icon.png" /> -->
 </head>
 
 <body>
@@ -21,7 +20,8 @@
                         <p class="text-white mb-3">Here are your recent active Leads</p>
                     </div>
                     <div class="col-sm-12 col-md-6 text-right d-none d-md-block">
-                        <button class="w-11 h-11 btn btn-white btn-sm rounded-circle border-0 p-0 text-primary d-flex justify-content-center align-items-center ml-auto">
+                        <button data-toggle="modal" data-target="#modalDialogs"
+                            class="w-11 h-11 btn btn-white btn-sm rounded-circle border-0 p-0 text-primary d-flex justify-content-center align-items-center ml-auto">
                             <span class="material-icons-outlined fa-3x"> add_circle_outline </span>
                         </button>
                     </div>
@@ -39,7 +39,12 @@
                     </div>
                     <div class="col-sm-4 text-sm-center d-flex align-items-center justify-content-center my-sm-0 my-2">
                         <p class="my-2 my-sm-0">Total 1000 Result</p>
-                        <select class="mx-2 form-control w-12 p-1"> <option value="">10</option><option value="">20</option><option value="">50</option><option value="">100</option></select>
+                        <select class="mx-2 form-control w-12 p-1">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">50</option>
+                            <option value="">100</option>
+                        </select>
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group mb-0 px-4 px-sm-0">
@@ -63,12 +68,86 @@
         <div class="d-inline-block w-100" id="bottomBar">
 
         </div>
-        <div id="modalDialogs" class=""></div>
+        <div id="modalDialogs" class="modal fade" data-backdrop="static">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header align-items-center">
+                        <h5 class="my-0">Add Leads</h5>
+                        <button
+                            class="w-10 h-10 btn btn-white btn-sm rounded-circle border-0 p-0 text-primary d-flex justify-content-center align-items-center"
+                            data-dismiss="modal">
+                            <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="floating-input form-group">
+                                        <input type="text" class="form-control" placeholder="Name" id="name-input" autocomplete="off">
+                                        <label for="name-input"> Name </label>
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="floating-input form-group">
+                                        <input type="tel" class="form-control" placeholder="Phone" id="phone-input" autocomplete="off">
+                                        <label for="phone-input"> Phone </label>
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="floating-input form-group">
+                                        <input type="email" class="form-control" placeholder="Email" id="email-input" autocomplete="off">
+                                        <label for="email-input"> Email </label>
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="floating-input form-group">
+                                        <input type="text" class="form-control" placeholder="From" id="from-input" autocomplete="off">
+                                        <label for="from-input">From</label>
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="floating-input form-group">
+                                        <input type="text" class="form-control" placeholder="To" id="to-input" autocomplete="off">
+                                        <label for="to-input">To</label>
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="floating-input form-group date-time-picker">
+                                        <input type="text" class="form-control dateTimePicker" placeholder="Moving Date"
+                                            id="date-input" autocomplete="off">
+                                        <label for="date-input">Moving Date</label>
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="floating-input form-group tags-input">
+                                        <textarea type="text" class="form-control" placeholder="Equipments" autocomplete="off"></textarea>
+                                        <label for="date-input">Equipments</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-danger" type="button" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="./src/js/vendor/jquery/dist/jquery.min.js"></script>
     <script src="./src/js/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./src/js/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="./src/js/vendor/dataTables/jquery.dataTables.min.js"></script>
+    <script src="./src/js/vendor/jquery.datetimepicker.full.js"></script>
+    <script src="./src/js/vendor/bootstrap-tagsinput.min.js"></script>
     <script src="./src/sampleData.js"></script>
     <script src="./src/js/theme.js"></script>
     <script>
@@ -77,6 +156,7 @@
             intiPopOver();
             initOwlCarousel();
             // initDataTable();
+            dtpInitNew(false)
         });
     </script>
 </body>

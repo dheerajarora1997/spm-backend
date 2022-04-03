@@ -1,0 +1,15 @@
+@import '../../vendor/jqueryDateTimePicker';
+
+.date-time-picker {
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    content: '\e93c';
+    font-family: 'lineicon';
+    position: absolute;
+    right: 13px;
+    bottom: 8px;
+    z-index: 0;
+  }
+}

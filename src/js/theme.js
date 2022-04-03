@@ -64,7 +64,13 @@ initDataTable = () => {
     });
 }
 
-
+let dtpInitNew = (timePickerBoolean, formatTime) => {
+    $('input.dateTimePicker').datetimepicker({
+        format: 'd/m/y',
+        formatTime: formatTime,
+        timepicker: timePickerBoolean,
+    });
+}
 
 
 
